@@ -1,0 +1,25 @@
+<Window x:Class="UchetZayavok.AddEditApplicationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавление/Редактирование заявки" Height="350" Width="400">
+    <Grid Margin="10">
+        <StackPanel>
+            <Label Content="ФИО:"/>
+            <TextBox x:Name="FullNameTextBox" Margin="0,0,0,10"/>
+            
+            <Label Content="Контактные данные:"/>
+            <TextBox x:Name="ContactInfoTextBox" Margin="0,0,0,10"/>
+            
+            <Label Content="Мероприятие:"/>
+            <ComboBox x:Name="EventsComboBox" DisplayMemberPath="EventName" Margin="0,0,0,10"/>
+            
+            <Label Content="Статус:"/>
+            <ComboBox x:Name="StatusesComboBox" DisplayMemberPath="StatusName" Margin="0,0,0,20"/>
+            
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="SaveButton" Content="Сохранить" Width="100" Margin="5" Click="SaveButton_Click"/>
+                <Button x:Name="CancelButton" Content="Отмена" Width="100" Margin="5" Click="CancelButton_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

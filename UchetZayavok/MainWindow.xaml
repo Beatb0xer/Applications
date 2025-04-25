@@ -1,0 +1,51 @@
+<Window x:Class="UchetZayavok.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UchetZayavok"
+        mc:Ignorable="d"
+        Title="Учет заявок на мероприятия" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Панель фильтрации -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+            <Label Content="Фильтр по статусу:" VerticalAlignment="Center"/>
+            <ComboBox x:Name="StatusFilterComboBox" Width="150" Margin="5,0"
+                      DisplayMemberPath="StatusName" SelectedValuePath="StatusID"
+                      SelectionChanged="StatusFilterComboBox_SelectionChanged"/>
+            
+            <Label Content="Фильтр по мероприятию:" VerticalAlignment="Center" Margin="10,0,0,0"/>
+            <ComboBox x:Name="EventFilterComboBox" Width="150" Margin="5,0"
+                      DisplayMemberPath="EventName" SelectedValuePath="EventID"
+                      SelectionChanged="EventFilterComboBox_SelectionChanged"/>
+            
+            <Button x:Name="ClearFiltersButton" Content="Сбросить" Width="80" Margin="10,0,0,0"
+                    Click="ClearFiltersButton_Click"/>
+        </StackPanel>
+        
+        <!-- DataGrid с заявками -->
+        <DataGrid x:Name="ApplicationsDataGrid" Grid.Row="1" Margin="10" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding ApplicationID}"/>
+                <DataGridTextColumn Header="ФИО" Binding="{Binding FullName}" Width="*"/>
+                <DataGridTextColumn Header="Контакты" Binding="{Binding ContactInfo}"/>
+                <DataGridTextColumn Header="Мероприятие" Binding="{Binding EventName}"/>
+                <DataGridTextColumn Header="Статус" Binding="{Binding StatusName}"/>
+                <DataGridTextColumn Header="Дата подачи" Binding="{Binding ApplicationDate}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        
+        <!-- Кнопки управления -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10">
+            <Button x:Name="AddButton" Content="Добавить" Width="100" Margin="5" Click="AddButton_Click"/>
+            <Button x:Name="EditButton" Content="Редактировать" Width="100" Margin="5" Click="EditButton_Click"/>
+            <Button x:Name="DeleteButton" Content="Удалить" Width="100" Margin="5" Click="DeleteButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

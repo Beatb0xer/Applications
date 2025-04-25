@@ -1,0 +1,17 @@
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\bin\Debug\UchetZayavok.exe.config
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\bin\Debug\UchetZayavok.exe
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\bin\Debug\UchetZayavok.pdb
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\obj\Debug\UchetZayavok.csproj.AssemblyReference.cache
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\obj\Debug\AddEditApplicationWindow.baml
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\obj\Debug\MainWindow.g.cs
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\obj\Debug\AddEditApplicationWindow.g.cs
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\obj\Debug\App.g.cs
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\obj\Debug\UchetZayavok_MarkupCompile.cache
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\obj\Debug\UchetZayavok_MarkupCompile.lref
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\obj\Debug\MainWindow.baml
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\obj\Debug\UchetZayavok.g.resources
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\obj\Debug\UchetZayavok.Properties.Resources.resources
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\obj\Debug\UchetZayavok.csproj.GenerateResource.cache
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\obj\Debug\UchetZayavok.csproj.CoreCompileInputs.cache
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\obj\Debug\UchetZayavok.exe
+C:\Users\ilias\source\repos\UchetZayavok\UchetZayavok\obj\Debug\UchetZayavok.pdb
